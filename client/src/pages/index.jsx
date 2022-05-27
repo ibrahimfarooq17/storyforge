@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
 import Navbar from '../components/Navbar/navbar';
 import Intro2 from '../components/Intro2/intro2';
@@ -11,16 +11,22 @@ import Portfolio from '../components/Portfolio/portfolio';
 import FullTestimonials from '../components/Full-testimonials/full-testimonials';
 import Team2 from '../components/Team2/team2';
 import Blogs2 from '../components/blogs/Blogs2/blogs2';
+import IntroWithSlider from '../components/Intro-with-slider/intro-with-slider';
+import EmailCollector from '../components/Email-collector/EmailCollector';
 
 const Homepage2 = () => {
-  const navbarRef = React.useRef(null);
-  const logoRef = React.useRef(null);
+  const aboutRef = useRef(null);
+  const aimRef = useRef(null);
+  const betaRef = useRef(null);
+
+  const navbarRef = useRef(null);
+  const logoRef = useRef(null);
 
   React.useEffect(() => {
     var navbar = navbarRef.current;
-    axios
-      .get('http://localhost:5000/api/test')
-      .then((response) => console.log(response.data));
+    // axios
+    //   .get('http://localhost:5000/api/test')
+    //   .then((response) => console.log(response.data));
     if (window.pageYOffset > 300) {
       navbar.classList.add('nav-scroll');
     } else {
@@ -36,15 +42,29 @@ const Homepage2 = () => {
   }, [navbarRef]);
   return (
     <LightTheme>
-      <Navbar nr={navbarRef} lr={logoRef} theme='themeL' />
+      <Navbar
+        nr={navbarRef}
+        lr={logoRef}
+        theme='themeL'
+        aboutRef={aboutRef}
+        aimRef={aimRef}
+        betaRef={betaRef}
+      />
       <Intro2 />
-      <Services style='4item' />
-      <Video2 />
-      <Portfolio grid={3} filterPosition='center' />
-      <FullTestimonials noPadding />
+      <div ref={aboutRef}>
+        <Services style='4item' />
+      </div>
+      <div ref={aimRef}>
+        <Video2 />
+      </div>
+      {/* <Portfolio grid={3} filterPosition='center' /> */}
+      {/* <FullTestimonials noPadding /> */}
+      <div ref={betaRef}>
+        <EmailCollector style='4item' />
+      </div>
       <Team2 />
-      <Blogs2 />
-      <CallToAction />
+      {/* <Blogs2 /> */}
+      {/* <CallToAction /> */}
       <Footer />
     </LightTheme>
   );

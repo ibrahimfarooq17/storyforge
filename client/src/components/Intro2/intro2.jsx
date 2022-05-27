@@ -10,28 +10,39 @@ const Intro2 = ({ sliderRef }) => {
           <div className='col-lg-6 valign'>
             <div className='cont md-mb50'>
               <div className='sub-title mb-5'>
-                <h6>Digital Consulting Agency</h6>
+                <h6>Publishing</h6>
               </div>
-              <h1 className='mb-10 fw-600'>Unique Business Consulting.</h1>
-              <p>
-                We help our clients succeed by not fucking brand identities,
-                digital experiences, and print materials.
+              <h1
+                style={{
+                  color: '#ffc15e',
+                }}
+                className='mb-10 fw-600'
+              >
+                Everyone has a story to tell.
+              </h1>
+              <p
+                style={{
+                  color: '#ca634e',
+                }}
+              >
+                But not everyone knows where to start. We can help. StoryForge
+                gives writers the community, safety, and structure they need to
+                forge their stories.
               </p>
-              <Link href={`/about/about-dark`}>
+              {/* <Link href={`/about/about-dark`}>
                 <a className='butn bord curve mt-30'>
                   <span>About Us</span>
                 </a>
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className='col-lg-6'>
             <div className='img'>
-              <img src='/img/slid/001.jpg' alt='' />
+              <img src='/img/home-screen.jpeg' alt='' />
             </div>
           </div>
         </div>
       </div>
-      <div className='line bottom left'></div>
     </header>
   );
 };

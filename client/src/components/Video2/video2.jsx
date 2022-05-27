@@ -1,6 +1,6 @@
-import React from "react";
-import ModalVideo from "react-modal-video";
-import "react-modal-video/css/modal-video.css";
+import React from 'react';
+import ModalVideo from 'react-modal-video';
+import 'react-modal-video/css/modal-video.css';
 
 const Video2 = () => {
   const [isOpen, setOpen] = React.useState(false);
@@ -8,49 +8,47 @@ const Video2 = () => {
     console.clear();
   }, []);
   return (
-    <section
-      className="video bg-img parallaxie"
-      style={{ backgroundImage: "url(/img/bg-vid.jpg)" }}
-    >
-      {typeof window !== "undefined" && (
-        <ModalVideo
-          channel="vimeo"
-          autoplay
-          isOpen={isOpen}
-          videoId="127203262"
-          onClose={() => setOpen(false)}
-        />
-      )}
-      <a
-        className="vid valign"
-        onClick={(e) => {
-          e.preventDefault();
-          setOpen(true);
-        }}
-      >
-        <div className="vid-butn">
-          <span className="icon">
-            <i className="pe-7s-play"></i>
-          </span>
-        </div>
-      </a>
-      <div className="container">
-        <div className="stauts">
-          <div className="item">
-            <h4>
-              3<span>K</span> +
-            </h4>
-            <h6>Happy Clients</h6>
-          </div>
-          <div className="item">
-            <h4>
-              14<span>K</span> +
-            </h4>
-            <h6>Success Projects</h6>
+    <>
+      <div className='row justify-content-center'>
+        <div className='col-lg-8 col-md-10'>
+          <div className='sec-head  text-center'>
+            <h6 className='wow fadeIn' data-wow-delay='.5s'>
+              Our Aim
+            </h6>
+            <h3 className='wow color-font'>
+              Let StoryForge help you find your story...
+            </h3>
           </div>
         </div>
       </div>
-    </section>
+      <section
+        className='video bg-img parallaxie'
+        style={{ backgroundImage: 'url(/img/video-poster.jpg)' }}
+      >
+        {typeof window !== 'undefined' && (
+          <ModalVideo
+            channel='vimeo'
+            autoplay
+            isOpen={isOpen}
+            videoId='712428931'
+            onClose={() => setOpen(false)}
+          />
+        )}
+        <a
+          className='vid valign'
+          onClick={(e) => {
+            e.preventDefault();
+            setOpen(true);
+          }}
+        >
+          <div className='vid-butn'>
+            <span className='icon'>
+              <i className='pe-7s-play'></i>
+            </span>
+          </div>
+        </a>
+      </section>
+    </>
   );
 };
 
