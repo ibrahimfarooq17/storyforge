@@ -9,11 +9,9 @@ const Team2 = () => {
           <div className='col-lg-8 col-md-10'>
             <div className='sec-head text-center'>
               <h6 className='wow fadeIn' data-wow-delay='.5s'>
-                Our Team
+                Who are we?
               </h6>
-              <h3 className='wow color-font'>
-                An original team of creators designers &amp; dreamers.
-              </h3>
+              <h3 className='wow color-font'>Meet the team</h3>
             </div>
           </div>
         </div>
@@ -54,8 +52,8 @@ const Team2 = () => {
                   </svg>
                 </div>
                 <div className='info'>
-                  <h6>Sabrina Rucker</h6>
-                  <span>CEO</span>
+                  <h6 style={{ color: '#ffc15e' }}>Sabrina Rucker</h6>
+                  <span style={{ color: '#80977b' }}>CEO</span>
                 </div>
               </div>
             </div>
@@ -94,8 +92,8 @@ const Team2 = () => {
                   </svg>
                 </div>
                 <div className='info'>
-                  <h6>Ryan Hicks</h6>
-                  <span>Client Manager</span>
+                  <h6 style={{ color: '#ffc15e' }}>Derek Rucker</h6>
+                  <span style={{ color: '#80977b' }}>CTO</span>
                 </div>
               </div>
             </div>

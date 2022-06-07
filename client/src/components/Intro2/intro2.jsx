@@ -10,19 +10,19 @@ const Intro2 = ({ sliderRef }) => {
           <div className='col-lg-6 valign'>
             <div className='cont md-mb50'>
               <div className='sub-title mb-5'>
-                <h6>Publishing</h6>
+                <h6>Everyone has a story to tell</h6>
               </div>
               <h1
                 style={{
-                  color: '#ffc15e',
+                  color: '#373F51',
                 }}
                 className='mb-10 fw-600'
               >
-                Everyone has a story to tell.
+                Think you have what it takes to get published? We do too.
               </h1>
               <p
                 style={{
-                  color: '#ca634e',
+                  color: '#373F51',
                 }}
               >
                 But not everyone knows where to start. We can help. StoryForge

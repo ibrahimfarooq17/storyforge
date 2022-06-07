@@ -41,27 +41,24 @@ const Services = ({ style, lines }) => {
                   <div className='item-box'>
                     <div>
                       <span
-                        // style={{
-                        //   color: '#80977b',
-                        // }}
+                        style={{
+                          color: '#ca634e',
+                        }}
                         className={`icon ${feature.icon}`}
                       ></span>
                     </div>
                     <div className='cont'>
                       <h6
                         style={{
-                          color: '#ffc15e',
+                          fontWeight: '300',
+                          fontSize: '15px',
+                          textTransform: 'uppercase',
+                          letterSpacing: '7px',
                         }}
                       >
                         {feature.title}
                       </h6>
-                      <p
-                        style={{
-                          color: '#ca634e',
-                        }}
-                      >
-                        {feature.content}
-                      </p>
+                      <p>{feature.content}</p>
                     </div>
                   </div>
                 </div>

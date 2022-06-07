@@ -40,13 +40,11 @@ const EmailCollector = ({ style, lines }) => {
           <div className='col-lg-8 col-md-10'>
             <div className='sec-head  text-center'>
               <h6 className='wow fadeIn' data-wow-delay='.5s'>
-                Interested in finding out more?
+                Learn more
               </h6>
-              <h3 className='wow color-font'>
-                Want to be one of our very first beta test writers?
-              </h3>
+              <h3 className='wow color-font'>Ready to start your journey?</h3>
               <p style={{ paddingBottom: '0px', paddingTop: '70px' }}>
-                Sign up below for awesome (and free) in-app rewards.
+                Sign up below for exclusive beta access and in-app rewards.
               </p>
             </div>
           </div>

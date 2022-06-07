@@ -53,6 +53,8 @@
 @import '/css/ionicons.min.css';
 @import '/css/pe-icon.min.css';
 @import '/css/font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 * {
   margin: 0;
@@ -69,12 +71,33 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+p {
+  font-family: 'Lato', sans-serif !important;
+  color: #373f51 !important;
+}
+
+h3 {
+  font-family: 'Josefin Sans' !important;
+  font-weight: 700 !important;
+}
+
+h1 {
+  font-family: 'Josefin Sans' !important;
+  font-weight: 700 !important;
+}
+
+h6 {
+  font-family: 'Josefin Sans' !important;
+  font-weight: 400 !important;
+  color: #373f51;
+}
+
 body {
   color: #111;
   line-height: 1.5;
   font-weight: 400;
   overflow-x: hidden !important;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
   background-color: #fcf5f0 !important;
 }
 

@@ -13,13 +13,26 @@ const Footer = ({ hideBGCOLOR }) => {
           <div className='col-lg-4'>
             <div className='item md-mb50'>
               <div className='title'>
-                <h5>Contact Us</h5>
+                <h3>Contact</h3>
               </div>
               <ul>
-                <li>
+                <li
+                  style={{
+                    marginTop: '40px',
+                  }}
+                >
                   <span className='icon pe-7s-mail'></span>
                   <div className='cont'>
-                    <h6>Email Us</h6>
+                    <h6
+                      style={{
+                        fontWeight: '300',
+                        fontSize: '15px',
+                        textTransform: 'uppercase',
+                        letterSpacing: '7px',
+                      }}
+                    >
+                      Email Us
+                    </h6>
                     <p>info@storyforge.com</p>
                   </div>
                 </li>
@@ -45,10 +58,12 @@ const Footer = ({ hideBGCOLOR }) => {
                   <i className='fab fa-youtube'></i>
                 </a>
               </div>
-              <div className='copy-right'>
-                <p>© 2022, StoryForge.</p>
-              </div>
             </div>
+          </div>
+        </div>
+        <div className='row justify-content-center'>
+          <div className='copy-right'>
+            <p>© 2022, StoryForge.</p>
           </div>
         </div>
       </div>

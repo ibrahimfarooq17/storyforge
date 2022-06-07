@@ -62,12 +62,12 @@ const Navbar = ({ lr, nr, theme, aboutRef, aimRef, betaRef }) => {
             </li>
             <li className='nav-item'>
               <a className='nav-link' onClick={executeAimScroll}>
-                Aim
+                Goal
               </a>
             </li>
             <li className='nav-item'>
               <a className='nav-link' onClick={executeBetaScroll}>
-                Beta Writers
+                Sign up
               </a>
             </li>
           </ul>
