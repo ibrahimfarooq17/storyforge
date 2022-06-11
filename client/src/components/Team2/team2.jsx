@@ -53,7 +53,19 @@ const Team2 = () => {
                 </div>
                 <div className='info'>
                   <h6 style={{ color: '#ffc15e' }}>Sabrina Rucker</h6>
-                  <span style={{ color: '#80977b' }}>CEO</span>
+                  <span
+                    style={{
+                      color: '#ffffff',
+                      textAlign: 'justify',
+                      marginRight: '10px',
+                    }}
+                  >
+                    CEO Sabrina Rucker is a marathoner and student at the
+                    University of Minnesota. She speaks six languages and has
+                    self-published three children’s books. Her background is in
+                    cybersecurity, history, and product design. Sabrina is
+                    working to publish her first graphic novel.
+                  </span>
                 </div>
               </div>
             </div>
@@ -93,7 +105,20 @@ const Team2 = () => {
                 </div>
                 <div className='info'>
                   <h6 style={{ color: '#ffc15e' }}>Derek Rucker</h6>
-                  <span style={{ color: '#80977b' }}>CTO</span>
+                  <span
+                    style={{
+                      color: '#ffffff',
+                      textAlign: 'justify',
+                      marginRight: '10px',
+                    }}
+                  >
+                    CTO Derek Rucker is a serial entrepreneur, data scientist,
+                    and avid reader. His startup Carrot Health was the 2018
+                    winner of the MN Cup Life Science/Health IT division, and
+                    was recently acquired. He's been writing a great new high
+                    fantasy novel for over 30 years now, and it's not nearly
+                    done.
+                  </span>
                 </div>
               </div>
             </div>
