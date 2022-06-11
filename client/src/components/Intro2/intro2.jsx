@@ -25,9 +25,8 @@ const Intro2 = ({ sliderRef }) => {
                   color: '#373F51',
                 }}
               >
-                But not everyone knows where to start. We can help. StoryForge
-                gives writers the community, safety, and structure they need to
-                forge their stories.
+                Join a community of writers, readers, and editors who will help
+                make your story the best it can be.
               </p>
               {/* <Link href={`/about/about-dark`}>
                 <a className='butn bord curve mt-30'>

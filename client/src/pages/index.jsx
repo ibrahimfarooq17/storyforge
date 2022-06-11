@@ -18,6 +18,7 @@ const Homepage2 = () => {
   const aboutRef = useRef(null);
   const aimRef = useRef(null);
   const betaRef = useRef(null);
+  const teamRef = useRef(null);
 
   const navbarRef = useRef(null);
   const logoRef = useRef(null);
@@ -49,6 +50,7 @@ const Homepage2 = () => {
         aboutRef={aboutRef}
         aimRef={aimRef}
         betaRef={betaRef}
+        teamRef={teamRef}
       />
       <Intro2 />
       <div ref={aboutRef}>
@@ -62,7 +64,9 @@ const Homepage2 = () => {
       <div ref={betaRef}>
         <EmailCollector style='4item' />
       </div>
-      <Team2 />
+      <div ref={teamRef}>
+        <Team2 />
+      </div>
       {/* <Blogs2 /> */}
       {/* <CallToAction /> */}
       <Footer />

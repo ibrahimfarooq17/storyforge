@@ -4,7 +4,7 @@ import Link from 'next/link';
 import appData from '../../data/app.json';
 import { handleDropdown, handleMobileDropdown } from '../../common/navbar';
 
-const Navbar = ({ lr, nr, theme, aboutRef, aimRef, betaRef }) => {
+const Navbar = ({ lr, nr, theme, aboutRef, aimRef, betaRef, teamRef }) => {
   const executeAboutScroll = () =>
     aboutRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
@@ -13,6 +13,9 @@ const Navbar = ({ lr, nr, theme, aboutRef, aimRef, betaRef }) => {
 
   const executeBetaScroll = () =>
     betaRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  const executeTeamScroll = () =>
+    teamRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   return (
     <nav
       ref={nr}
@@ -68,6 +71,11 @@ const Navbar = ({ lr, nr, theme, aboutRef, aimRef, betaRef }) => {
             <li className='nav-item'>
               <a className='nav-link' onClick={executeBetaScroll}>
                 Sign up
+              </a>
+            </li>
+            <li className='nav-item'>
+              <a className='nav-link' onClick={executeTeamScroll}>
+                Team
               </a>
             </li>
           </ul>
